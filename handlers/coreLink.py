@@ -58,7 +58,7 @@ def github_issuse(friend_poor, config=None):
     print('-------获取github友链----------')
     baselink = 'https://github.com/'
     errortimes = 0
-    config = config.yml
+    # config = config.yml
     print('owner:', config['setting']['github_friends_links']['owner'])
     print('repo:', config['setting']['github_friends_links']['repo'])
     print('state:', config['setting']['github_friends_links']['state'])
@@ -103,11 +103,12 @@ def github_issuse(friend_poor, config=None):
 
 
 # 从gitee获取friendlink
-def kang_api(friend_poor):
+def kang_api(friend_poor, config=None):
     print('\n')
     print('-------获取gitee友链----------')
     baselink = 'https://gitee.com'
     errortimes = 0
+    # config = config.yml
     print('owner:', config['setting']['gitee_friends_links']['owner'])
     print('repo:', config['setting']['gitee_friends_links']['repo'])
     print('state:', config['setting']['gitee_friends_links']['state'])
